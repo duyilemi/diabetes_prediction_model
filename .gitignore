@@ -1,1 +1,4 @@
 venv/
+
+# Ignore credentials
+diabetes-prediction-437513-0041256b4309.json
