@@ -7,3 +7,5 @@ imblearn
 matplotlib
 xgboost
 seaborn
+gspread
+oauth2client
