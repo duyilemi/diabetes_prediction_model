@@ -23,7 +23,9 @@ import json
 creds_dict = st.secrets["gcp_service_account"]
 
 # Define the scope for Google Sheets API
-scope = ['https://www.googleapis.com/auth/spreadsheets']
+
+scope = [    'https://www.googleapis.com/auth/spreadsheets',
+    'https://www.googleapis.com/auth/drive']
 
 # Use the credentials to authorize Google Sheets access
 creds = Credentials.from_service_account_info(creds_dict, scopes=scope)
