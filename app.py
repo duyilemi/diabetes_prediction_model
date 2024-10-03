@@ -20,7 +20,7 @@ import json
 # creds = ServiceAccountCredentials.from_json_keyfile_name('diabetes-prediction-437513-0041256b4309.json', scope)
 
 # Load the credentials from Streamlit secrets
-creds_dict = json.loads(st.secrets["gcp_service_account"])
+creds_dict = st.secrets["gcp_service_account"]
 
 # Define the scope for Google Sheets API
 scope = ['https://www.googleapis.com/auth/spreadsheets']
