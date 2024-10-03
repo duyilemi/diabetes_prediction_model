@@ -4,17 +4,31 @@ import pandas as pd
 import pickle
 import joblib
 import gspread
-from oauth2client.service_account import ServiceAccountCredentials
+from google.oauth2.service_account import Credentials
+import json
+# from oauth2client.service_account import ServiceAccountCredentials
+
 # from sklearn.preprocessing import StandardScaler
 
 # ------------- Google Sheets Setup ------------- #
 
 
 # Define the scope for Google Sheets API
-scope = ["https://spreadsheets.google.com/feeds", 'https://www.googleapis.com/auth/drive']
+# scope = ["https://spreadsheets.google.com/feeds", 'https://www.googleapis.com/auth/drive']
 
 # Authenticate using the credentials JSON file
-creds = ServiceAccountCredentials.from_json_keyfile_name('diabetes-prediction-437513-0041256b4309.json', scope)
+# creds = ServiceAccountCredentials.from_json_keyfile_name('diabetes-prediction-437513-0041256b4309.json', scope)
+
+# Load the credentials from Streamlit secrets
+creds_dict = json.loads(st.secrets["gcp_service_account"])
+
+# Define the scope for Google Sheets API
+scope = ['https://www.googleapis.com/auth/spreadsheets']
+
+# Use the credentials to authorize Google Sheets access
+creds = Credentials.from_service_account_info(creds_dict, scopes=scope)
+# Load the credentials from Streamlit secrets ends
+
 
 # Authorize the client
 client = gspread.authorize(creds)
