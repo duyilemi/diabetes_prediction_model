@@ -62,7 +62,7 @@ The XGBoost model identified the following features as the most significant pred
 
 These findings align with existing medical knowledge about risk factors for diabetes.
 
-**[Insert image of feature importance plot here]**
+**[https://github.com/duyilemi/diabetes_prediction_model/blob/master/feature_importance.png?raw=true]**
 
 This visualization further emphasizes the importance of these features in predicting diabetes.
 
