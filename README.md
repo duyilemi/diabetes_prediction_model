@@ -52,7 +52,7 @@ The XGBoost classifier was evaluated on an unseen test dataset to assess its gen
 | Actual    | False Negative (44)  | True Positive (146) |
 
 
-![feature importance](https://github.com/duyilemi/diabetes_prediction_model/blob/master/confusion%20matrix.png?raw=true)
+![confusion_matrix](https://github.com/duyilemi/diabetes_prediction_model/blob/master/confusion%20matrix.png?raw=true)
 
 ## Feature Importance
 
