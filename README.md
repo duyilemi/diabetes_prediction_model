@@ -1,4 +1,4 @@
-**Diabetes Prediction Machine Learning Model**
+## Diabetes Prediction Machine Learning Model
 
 This project aims to develop a machine learning model capable of accurately predicting the likelihood of diabetes in individuals based on various medical and lifestyle factors. By early detection, this model can assist healthcare professionals in providing timely interventions and improving patient outcomes.
 
@@ -45,6 +45,21 @@ The XGBoost classifier was evaluated on an unseen test dataset to assess its gen
 - AUC: 0.875952
 
 These results demonstrate the model's ability to predict diabetes in new individuals, with a good balance between precision and recall. However, it's important to note that the performance on unseen data may be lower than on the training data.
+
+## Feature Importance
+
+The XGBoost model identified the following features as the most significant predictors of diabetes status:
+
+- **BMI**
+- **Age**
+- **Blood Glucose Level**
+- **HbA1c Level**
+
+These findings align with existing medical knowledge about risk factors for diabetes.
+
+[Insert image of feature importance plot here]
+
+This visualization further emphasizes the importance of these features in predicting diabetes.
 
 ## Streamlit App
 

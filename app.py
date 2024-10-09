@@ -41,7 +41,7 @@ sheet = client.open('User Predictions').sheet1  # My Google Sheet name
 
 # ------------- Function to log user input to Google Sheets Setup ------------- #
 
-# List of field names (columns) from your app
+# List of field names (columns) from python notebook
 field_names = ['age', 'bmi', 'HbA1c_level', 'blood_glucose_level', 'gender', 'hypertension', 'heart_disease', 'smoking_history', 'prediction']
 
 # Function to log user input to Google Sheets
