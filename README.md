@@ -51,6 +51,9 @@ The XGBoost classifier was evaluated on an unseen test dataset to assess its gen
 | Actual    | True Negative (1965) | False Positive (33) |
 | Actual    | False Negative (44)  | True Positive (146) |
 
+
+![feature importance](https://github.com/duyilemi/diabetes_prediction_model/blob/master/confusion%20matrix.png?raw=true)
+
 ## Feature Importance
 
 The XGBoost model identified the following features as the most significant predictors of diabetes status:
