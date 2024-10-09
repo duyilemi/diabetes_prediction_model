@@ -44,7 +44,12 @@ The XGBoost classifier was evaluated on an unseen test dataset to assess its gen
 - Accuracy: 0.964808
 - AUC: 0.875952
 
-These results demonstrate the model's ability to predict diabetes in new individuals, with a good balance between precision and recall. However, it's important to note that the performance on unseen data may be lower than on the training data.
+**Confusion Matrix**
+
+| Predicted | Negative             | Positive            |
+| --------- | -------------------- | ------------------- |
+| Actual    | True Negative (1965) | False Positive (33) |
+| Actual    | False Negative (44)  | True Positive (146) |
 
 ## Feature Importance
 
@@ -57,7 +62,7 @@ The XGBoost model identified the following features as the most significant pred
 
 These findings align with existing medical knowledge about risk factors for diabetes.
 
-[Insert image of feature importance plot here]
+**[Insert image of feature importance plot here]**
 
 This visualization further emphasizes the importance of these features in predicting diabetes.
 
